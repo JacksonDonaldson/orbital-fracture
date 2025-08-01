@@ -1,3 +1,4 @@
+jacksondonaldson.com/blink
 This folder contains a proof-of-concept against the Blink video doorbell. When run, it replaces the doorbell's firmware with instructions to spell out SOS repeatedly.
 
 An attacker within range of the Blink's wifi network during initialization can exploit weak cryptography and a buffer overflow in key negotiation to gain arbitrary code execution.
